@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kyle's Form</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/requiredfields.js"></script>
+</head>
+    
+<body>
+  <div id=wrapper>
+    <form name="myForm" action="formhandler.php"  onsubmit="return validateForm()" method="get">
+        <fieldset>
+          <legend>Contact Information</legend> 
+          <ul>
+              <li><label>NAME</label>
+              <input type="text" name="name" placeholder="<required>"></li>
+              <li><label>EMAIL</label>
+              <input type="email" name="email" placeholder="<required>"></li>
+              <li><label>PHONE NUMBER</label>
+              <input type="tel" name="phone" placeholder="<optional>"></li>
+              <li><label>STATE OF RESIDENCE</label>
+              <input type="text" name="state" placeholder="<optional>"></li>
+          </ul>
+          <button type="submit">Enter</button>
+        </fieldset>       
+    </form>
+  </div> <!--end wrapper-->
+</body>
+</html>
